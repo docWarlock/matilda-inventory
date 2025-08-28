@@ -29,30 +29,30 @@ Designed for non-tech users (Sam) and future-you (Alex).
 home-inventory/
 ├── backend/
 │   ├── models.py         ✅ (created)
-│   ├── schemas.py        ✅ (pending)
-│   ├── database.py       ✅ (pending)
+│   ├── schemas.py        ✅ (created)
+│   ├── database.py       ✅ (created)
 │   └── api/
-│       └── items.py      ✅ (pending)
+│       └── items.py      ✅ (created)
 ├── tests/
 │   └── test_models.py    ✅ (created - passes)
-├── main.py               🔴 (not created)
-├── requirements.txt      ✅ (empty — will be filled)
-├── Dockerfile            ✅ (empty — will be filled)
-├── .env                  ✅ (empty — will be filled)
-├── README.md             ✅ (empty — will be filled)
+├── main.py               ✅ (created)
+├── requirements.txt      ✅ (filled)
+├── Dockerfile            ✅ (filled)
+├── .env                  ✅ (filled)
+├── README.md             ✅ (filled)
 └── notes.md              ✅ (this file — always up to date)
 ```
-
 ## 🔍 Current Task
 - ✅ Write `tests/test_models.py` with a failing test for `Item` model
 - ✅ (Test file created - will fail because Item model doesn't exist yet)
 - ✅ Then create `backend/models.py` to make it pass
 - ✅ (Model implemented and test passes)
-- ➡️ Then write `backend/schemas.py` for data validation
-- ➡️ Then create `backend/database.py` for connection
-- ➡️ Then build `main.py` and `api/items.py`
-- ➡️ Then write `Dockerfile`, `requirements.txt`, `README.md`
-
+- ✅ Then write `backend/schemas.py` for data validation
+- ✅ Then create `backend/database.py` for connection
+- ✅ Then build `main.py` and `api/items.py`
+- ✅ Then write `Dockerfile`, `requirements.txt`, `README.md`
+- ➡️ Next: Update the project to include more comprehensive models (House, Room, Location, Container)
+```
 ## 🧩 Future Features (Keep in Mind, But Don’t Implement Yet)
 - [ ] Add expiry date display
 - [ ] Add photo upload (future: via API)

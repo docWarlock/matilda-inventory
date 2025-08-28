@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# CPython cache
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+venv/
+env/
+.venv/
+
+# Database
+*.db
+*.db-journal
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test coverage
+htmlcov/
+.coverage
+.coverage.*
+.cache
+
+# Logs
+*.log
+
+# Docker
+.dockerignore
