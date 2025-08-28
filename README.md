@@ -20,31 +20,6 @@ Built with **TDD**, **Docker**, and **PostgreSQL**, designed to grow iteratively
 
 ---
 
-## Project Directory
-home-inventory/
-│
-├── backend/
-│   ├── __init__.py
-│   ├── models.py             # SQLAlchemy ORM: Item, Category, etc.
-│   ├── schemas.py            # Pydantic: data validation (input/output)
-│   ├── database.py           # DB connection & session management
-│   └── api/
-│       ├── __init__.py
-│       └── items.py          # FastAPI routes: GET /items, POST /items, etc.
-│
-├── tests/
-│   ├── __init__.py
-│   ├── conftest.py           # pytest fixtures (e.g., test DB session)
-│   └── test_models.py        # TDD: test Item model & schema
-│
-├── main.py                   # FastAPI app entrypoint
-├── requirements.txt          # Python dependencies
-├── Dockerfile                # Build container for Synology
-├── .env                      # Environment variables (e.g., DB URL)
-├── README.md                 # Project overview & setup guide
-└── .gitignore                # Ignore .pyc, __pycache__, .env, etc.
-
-
 ## 📦 Features (Phase 0: Kitchen MVP)
 
 - Hierarchical inventory: House → Room → Location → Container → Item
@@ -70,3 +45,30 @@ home-inventory/
 ---
 
 ## 📁 Project Structure (Initial)
+
+home-inventory/
+│
+├── backend/
+│   ├── __init__.py
+│   ├── models.py             # SQLAlchemy ORM: Item, Category, etc.
+│   ├── schemas.py            # Pydantic: data validation (input/output)
+│   ├── database.py           # DB connection & session management
+│   └── api/
+│       ├── __init__.py
+│       └── items.py          # FastAPI routes: GET /items, POST /items, etc.
+│
+├── tests/
+│   ├── __init__.py
+│   ├── conftest.py           # pytest fixtures (e.g., test DB session)
+│   └── test_models.py        # TDD: test Item model & schema
+│
+├── main.py                   # FastAPI app entrypoint
+├── requirements.txt          # Python dependencies
+├── Dockerfile                # Build container for Synology
+├── .env                      # Environment variables (e.g., DB URL)
+├── README.md                 # Project overview & setup guide
+└── .gitignore                # Ignore .pyc, __pycache__, .env, etc.
+
+## 🧠 How to Start with Cline
+Just say:
+> "Use the project contract from cline-role.md and the current state from notes.md. Let’s start building the Home Inventory System step by step. Begin with the first task: write a failing test for the `Item` model in `tests/test_models.py`."
