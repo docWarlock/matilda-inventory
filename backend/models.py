@@ -9,6 +9,7 @@ class House(Base):
     
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, index=True)
+    address = Column(String)
     
     # Relationship to rooms
     rooms = relationship("Room", back_populates="house")

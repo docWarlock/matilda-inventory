@@ -4,12 +4,14 @@ from typing import Optional
 
 class HouseBase(BaseModel):
     name: str
+    address: Optional[str] = None
 
 class HouseCreate(HouseBase):
     pass
 
 class HouseUpdate(HouseBase):
     name: Optional[str] = None
+    address: Optional[str] = None
 
 class House(HouseBase):
     id: int
