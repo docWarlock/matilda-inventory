@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from sqlalchemy.orm import Session
 from backend import models, database
-from backend.api import items
+from backend.api import items, houses, rooms, locations, containers
 
 # Create database tables
 models.Base.metadata.create_all(bind=database.engine)
@@ -14,6 +14,10 @@ app = FastAPI(
 
 # Include API routes
 app.include_router(items.router)
+app.include_router(houses.router)
+app.include_router(rooms.router)
+app.include_router(locations.router)
+app.include_router(containers.router)
 
 @app.get("/")
 def read_root():
